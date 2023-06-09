@@ -1,5 +1,6 @@
 @ECHO OFF
 
-cmake --build .
+cd cmake
+cmake ../
 
 PAUSE
