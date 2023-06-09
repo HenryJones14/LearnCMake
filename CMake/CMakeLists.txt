@@ -6,11 +6,11 @@ cmake_minimum_required(VERSION 3.25)
 # Create solution
 project("TestSolutionName")
 
-# Create EXE
-add_executable("TestExicutable" test.cpp)
 
-# Create Project
-# add_subdirectory ("TestProjectName")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../../Builds/$<CONFIG>-$<PLATFORM_ID>-${CMAKE_SYSTEM_PROCESSOR})
+
+# Create EXE
+add_executable("TestExicutable" ../../Source/Executable/main.cpp)
 
 
 
